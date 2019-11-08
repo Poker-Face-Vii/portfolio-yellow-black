@@ -1,0 +1,500 @@
+// ??  ------>  MAIN STYLE  <--------
+.body {
+    font-family: opensans;
+
+    // ?? ------>    this is black header <-------
+    header {
+        background-color: $darkbg;
+        height: 1080px;
+        padding-top: 42px;
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header-box {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+
+            .header-descrip {
+                // background-color: blue;
+                max-width: 1100px;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+                margin-left: 25px;
+
+
+            }
+
+            h1 {
+                color: $yellowbg;
+                margin-top: 110px;
+                font-size: 150px;
+                text-transform: uppercase;
+                // font-weight:100;
+                font-family: wood;
+            }
+
+            .p-h {
+
+                p {
+                    margin-top: 45px;
+                    color: $brightcolor;
+                    padding-right: 350px;
+                    font-family: openSans;
+
+                }
+            }
+
+            // a {
+            //     margin-top: 45px;
+            //     color: $brightcolor;
+            //     text-decoration: none;
+            //     border: 2px solid $yellowbg;
+            //     padding: 12px 30px;
+            //     border-radius: 22px;
+            //     text-transform: uppercase;
+            //     // font-weight: 100;
+            //     font-size: 18px;
+            //     font-family: raleway;
+            // }
+
+
+            .round-btn {
+                margin-top: 45px;
+            }
+        }
+    }
+
+    .yellow-box {
+        background-color: $yellowbg;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        p {
+            padding: 25px 250px;
+            text-align: center;
+            color: $darkcolor;
+
+            align-self: center;
+        }
+    }
+
+    // todo humberger menu   
+
+
+    
+
+    // todo humberger menu   
+
+
+    // --------------------
+    // ? container 1
+    // --------------------
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 430px;
+        margin: 50px 200px;
+
+        .item-group {
+            img {
+                background-color: $yellowbg;
+                padding: 20px;
+            }
+
+            h2 {
+                font-family: raleway;
+                font-weight: 100;
+                font-size: 35px;
+                text-transform: uppercase;
+                color: $yellowbg;
+                margin: 45px 0;
+            }
+
+            p {
+                margin-right: 30px;
+                color: $darkcolor;
+
+            }
+        }
+    }
+
+    // ?--------------->  BUTTON BElow CONtainer   <------------------
+    .center-btn {
+        display: flex;
+        justify-content: center;
+        height: 120px;
+
+        // a {
+        //     margin: 45px 0 60px 0;
+        //     text-transform: uppercase;
+        //     padding: 18px 50px;
+        //     text-decoration: none;
+        //     color: $darkcolor;
+        //     border: 1px solid $yellowbg;
+        //     border-radius: 25px;
+        // }
+        .round-btn {
+            margin: 45px 0 60px 0;
+
+            a {
+
+                color: $darkcolor;
+
+            }
+        }
+    }
+
+    // ---------------
+    //? 2 container 
+    // == == == == == 
+    .container-dark {
+
+        background-color: $darkcolor;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 100px;
+
+        .item-group2 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            color: $brightcolor;
+            margin: 45px 0;
+            font-size: 35px;
+            font-family: openSans;
+
+        }
+
+        h3 {
+            font-family: raleway;
+            color: $yellowbg;
+            font-weight: 100;
+        }
+
+    }
+
+
+
+    // -------------------------------------------
+    // ?--------------> SO FAr  <-----------------
+    // -------------------------------------------
+    .so-far {
+        display: flex;
+        flex-direction: column;
+        margin: 70PX 200PX;
+        align-items: flex-start;
+
+        .item-group {
+
+            h1 {
+                color: $yellowbg;
+                font-family: raleway;
+                font-size: 35px;
+                font-weight: 100;
+
+            }
+
+            p {
+                color: $darkcolor;
+                margin: 60px 0 100px 0;
+            }
+
+            &.button-group {
+                align-self: flex-end;
+
+                a {
+                    font-family: raleway;
+                    font-weight: 100;
+                    text-decoration: none;
+                    color: $darkcolor;
+                    margin: 0 25px;
+                    border: 1px solid $yellowbg;
+                    padding: 15px 40px;
+                }
+            }
+        }
+
+    }
+
+    // ----------------------------------
+    // ?------>    IMAGE SHOW     <------
+    // ----------------------------------
+    .image-show {
+        // background-color: blue;
+        width: 100%;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+
+            .first-el {
+                width: 30%;
+                // min-width: 150px;
+                height: 900px;
+                background: url(../img/jpeg/left-one.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .column {
+                width: 100%;
+
+                .row {
+                    display: flex;
+                    flex-direction: row;
+
+                    .row-item {
+
+                        display: inline-block;
+
+
+                        width: 100%;
+
+                        height: 450px;
+
+                        &.ru1 {
+                            background: url(../img/jpeg/row-up-1.jpg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &.ru2 {
+                            background: url(../img/jpeg/row-up-2.jpg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &.rd1 {
+                            background: url(../img/jpeg/row-down-1.jpg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &.rd2 {
+                            background: url(../img/jpeg/row-down-2.jpg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &.rd3 {
+                            background: url(../img/jpeg/row-down-3.jpg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ----------------------------------
+    // ?------>    Client    <------
+    // ----------------------------------
+    .client {
+        background-color: $darkbg;
+        display: flex;
+        height: 500px;
+        padding: 100px 200px;
+
+        .column {
+            h1 {
+                color: $yellowbg;
+                font-family: raleway;
+                text-transform: uppercase;
+                font-weight: 100;
+
+            }
+
+            p {
+                color: $brightcolor;
+                margin: 45px 0;
+            }
+
+            .logo-slider {
+
+                display: flex;
+                justify-content: space-between;
+                margin-top: 120px;
+
+                img {
+                    // margin: 0 30px;
+
+                }
+            }
+
+            .slider-btn {
+                margin: 100px 0;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    width: 11px;
+                    height: 11px;
+                    margin: 0 7px;
+                    background-color: $brightcolor;
+
+                    a {}
+                }
+            }
+        }
+    }
+
+    // ----------------------------------
+    // ?------>   Contact us    <------
+    // ----------------------------------
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 45px 200px;
+
+        .item-group {
+            h1 {
+                color: $yellowbg;
+                font-family: raleway;
+                text-transform: uppercase;
+                font-weight: 100;
+
+            }
+
+            p {
+                color: $darkcolor;
+                margin: 45px 0;
+            }
+        }
+
+        .form {
+            align-self: center;
+
+            form {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                input {
+                    width: 370px;
+                    padding: 15px 35px;
+                    border: 2px solid $darkbg;
+                    display: block;
+                    margin: 10px 0px;
+
+                    &.subject,
+                    &.message {
+                        width: 827px;
+                    }
+
+                    &.message {
+                        height: 200px;
+
+                    }
+
+                    &.submit {
+                        background-color: white;
+                        border: 1px solid $yellowbg;
+                        border-radius: 22px;
+                    }
+
+                }
+
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    input {
+
+                        // color: $yellowbg;
+                        &.name {
+                            margin-right: 15px;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .info {
+        background-color: $yellowbg;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 45px 200px;
+
+        .item-group {
+            display: flex;
+            align-items: center;
+
+            img {
+                background-color: $darkbg;
+                padding: 25px;
+            }
+
+            h2 {
+                color: $darkcolor;
+                margin-left: 10px;
+                font-size: 20px;
+                font-family: openSans;
+            }
+        }
+    }
+
+    .copy-right {
+        background-color: $darkbg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 200px;
+
+        h1 {
+            color: $brightcolor;
+            font-family: raleway;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-bottom: 45px;
+
+            span {
+                color: $yellowbg;
+            }
+        }
+
+        .social {
+            a {
+                img {
+                    margin: 15px 30px;
+                }
+            }
+        }
+
+        .go-up {
+            background-color: $yellowbg;
+            padding: 20px;
+            border-radius: 5px;
+            align-self: flex-end;
+            margin-top: 50px;
+
+        }
+
+
+    }
+
+}
+
+// ?----------> NEW ONE   <-----------------
